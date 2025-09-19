@@ -3,3 +3,12 @@ body{
     font-family: sans-serif;
 }
 
+.contenedor-1{
+    background-color: red;
+    padding: 30px;
+}
+
+.contenedor-2{
+    padding: 30px;
+    background-color: blue;
+}
