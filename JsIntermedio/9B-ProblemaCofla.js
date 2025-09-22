@@ -20,6 +20,9 @@ alumnos = [{
     materia:"Recreo"
 }];
 
+const boton = document.querySelector(".boton-confirmar");
+const contenedor = document.querySelector(".grid-container");
+
 for(alumno in alumnos){
     let datos = alumnos[alumno];
     let nombre = datos["nombre"];
@@ -30,17 +33,23 @@ for(alumno in alumnos){
         <div class="grid-item email">${email}</div>
         <div class="grid-item materia">${materia}</div>
         <div class="grid-item semana">
-            <select name="" id="">
-                <option value="1">Semana 1</option>
-                <option value="2">Semana 2</option>
+            <select class="semana-elegida">
+                <option value="semana 1">Semana 1</option>
+                <option value="semana 2">Semana 2</option>
             </select>
-        </div>
-    `;
-    
-    document.querySelector(".grid-container").innerHTML+= htmlcode;
+        </div>`;
+    contenedor.innerHTML+= htmlcode;
 }
 
-const boton = document.querySelector(".boton-confirmar");
 boton.addEventListener("click", ()=>{
-
+    let confirmar = confirm("¿realmente quieres confirmar las mesas?");
+    if(confirmar){
+        document.body.removeChild(boton)
+        let elementos = document.querySelectorAll(".semana");
+        let semanasElegidas = document.querySelectorAll(".semana-elegida");
+        for (elemento in elementos){
+            semana = elementos[elemento];
+            semana.innerHTML = semanasElegidas[elemento].value;
+        }
+    }
 });

@@ -10,3 +10,11 @@
     border: 1px solid #48e;
     margin: 5px;
 }
+
+.boton-confirmar{
+    padding: 9px 40px;
+    background: #48e;
+    color: #fff;
+    border: none;
+    margin: 30px;
+}
