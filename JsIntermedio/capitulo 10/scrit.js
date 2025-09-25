@@ -11,7 +11,8 @@ if (3 > 3){ //Sentencia de control
 } */
 
 
-let expr = "Manzana";    
+// estructura switch
+/* let expr = "Manzana";    
 switch (expr) {
     case "Banana":
         console.log("Esta fruta es amarrilla");
@@ -25,4 +26,14 @@ switch (expr) {
     default:
         console.log("No es ninguna");
     break;
+} */
+
+//try ... catch
+
+try{
+    console.log("Aqui no ha pasado nada");
+}
+catch(error){
+   // console.log(typeof error); //typeof para checar el tipo de dato
+   console.log("Lo siento, ocurrio un error de referencia");
 }
