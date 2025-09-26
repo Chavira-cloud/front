@@ -56,7 +56,7 @@ const verificarAprovacion = (nota1, nota2,prevRes) =>{
 
 const abrirModal = (res, msg)=>{
     document.querySelector(".resultado").innerHTML = res;
-    document.querySelector(".mensaje").innerHTML = msg;
+    document.querySelector(".mensaje").innerHTML = "tu prueba: " + msg;
     let modal = document.querySelector(".modal-background");
     modal.style.display= "flex";
     modal.style.animation = "aparecer 1s forwards";
