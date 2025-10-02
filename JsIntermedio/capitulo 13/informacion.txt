@@ -1,4 +1,4 @@
 {
     "nombre": "PEDRO",
-    "edad": 24s
+    "edad": 24
 }
